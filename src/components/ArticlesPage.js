@@ -19,8 +19,8 @@ function ArticlesPage({articles, activeArticle}) {
                     </div>
                     <div className=" relative group">
                     <div className="absolute -inset-1 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
-                    <div className="relative px-8 py-4 rounded-lg shadow-lg leading-none bg-black text-center cursor-pointer">
-                            <h2 className="text-base animate-bounce"><strong className="font-semibold text-lg">Say : </strong> Hi or Hello</h2>
+                    <div className="relative p-4 rounded-lg shadow-lg leading-none bg-black text-center cursor-pointer">
+                            <h2 className="text-base animate-bounce"><strong className="font-medium text-lg">Say : </strong> Hi or Hello</h2>
                             <p className="text-base mt-4 animate-bounce">For to known this Application</p>
                         </div>
                     </div>
@@ -29,7 +29,7 @@ function ArticlesPage({articles, activeArticle}) {
                         
                         <div key={info.id} className="relative group w-full">
                             <div className="absolute inset-0 bg-gradient-to-r from-pink-600 to-purple-600 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt "></div>
-                        <div  className=" relative cursor-pointer flex flex-col justify-between items-center p-4 text-center w-full h-[50vh] bg-black rounded-lg leading-none">
+                        <div className=" relative cursor-pointer flex flex-col justify-between items-center p-4 text-center w-full h-[50vh] bg-black rounded-lg leading-none">
                             <h1 className="font-semibold text-xl">{info.title}</h1>
                             {info.info ? 
                             <p className="text-base"><strong className="text-lg font-semibold">{info.title.split(' ')[2]}</strong> :  <br />{info.info}</p> : null}
@@ -45,7 +45,7 @@ function ArticlesPage({articles, activeArticle}) {
     return (
         <div className="w-full px-4 grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 gap-6 ">
             {articles?.map((article,i)=>(
-                <div className=" p-2">
+                <div key={i} className=" p-2">
                     <ArticleCards article={article} key={i} i={i} activeArticle={activeArticle} />
                 </div>
             ))}
