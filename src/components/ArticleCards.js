@@ -3,7 +3,7 @@ import Images from '../images/img.png';
 
 function ArticleCards({article:{urlToImage,url, description, publishedAt, source, title } ,i,activeArticle}) {
     const [elRefs, setElRefs] = useState([]);
-    const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 30);
+    const scrollToRef = (ref) => window.scroll(0, ref.current.offsetTop - 50);
 
         useEffect(() => {
             window.scroll(0, 0);
