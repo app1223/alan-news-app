@@ -5,7 +5,7 @@ const infoCards = [
     { id: '100', title: 'Latest News', text: 'Give me the latest news' },
     { id: '101', title: 'News by Categories', info: 'Business, Entertainment, General, Health, Science, Sports, Technology', text: 'Give me the latest Technology news' },
     { id: '102', title: 'News by Terms', info: 'Bitcoin, PlayStation 5, Smartphones, Donald Trump...', text: 'What\'s up with PlayStation 5' },
-    { id: '103', title: 'News by Sources', info: 'The Times of India, NDTV News, India Today, The Indian Express, Republic World...', text: 'Give me the news from CNN' },
+    { id: '103', title: 'News by Sources', info: 'The Times of India, NDTV News, India Today, The Indian Express, Republic World...', text: 'Give me the news from India today' },
   ];
 function ArticlesPage({articles, activeArticle}) {
     if(!articles.length){
